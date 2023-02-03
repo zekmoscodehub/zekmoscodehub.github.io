@@ -1,0 +1,107 @@
+
+.main-page{
+    margin: 10px auto;
+    background: linear-gradient(to top, rgb(253, 235, 174), rgb(156, 206, 255));
+    width: 100%;
+    height: 100vh;
+    animation: main-page 3s ease-out forwards;
+   
+   
+     
+}
+h1{
+	color:red;
+}
+nav{
+    flex-direction:row;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 15px auto;
+    background: fixed;
+    
+}
+.main-page a{
+    text-decoration: none;
+    margin: 10px 15px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    
+   
+}
+.main-page a:hover{
+    border: 1px solid gray;
+    padding:3px 5px;
+    border-radius: 30px;
+}
+.search{
+  
+    padding-top: 5px;
+    border-right: 0;
+    margin-right: -15px;
+    font-size: 16px;
+    text-decoration: none;
+    background: transparent;
+    color: chocolate;
+    letter-spacing: 1px;
+    
+   
+}
+.search-btn{
+    border: 1px solid gray;
+    padding:3px 5px;
+    padding-bottom: 1px;
+    cursor:pointer;
+    color: azure;
+    background: transparent;
+    border: 1px solid #8686fc;
+  
+    
+    
+    
+    
+    
+}
+.btn-join{
+    border-radius: 20px;
+    border: 1px solid #8686fc;
+    padding: 5px 15px;
+    color: azure;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+.container1{
+    position: inherit;
+    top: -550%;
+    overflow: hidden;
+    margin:10px auto;
+    flex-wrap: wrap;
+    position: absolute;
+ 
+    
+}
+
+
+.btn-join:hover,.search-btn:hover{
+background-color: rgb(134, 134, 252);
+}
+.btn-join:active,.search-btn:active,.main-page a:active{
+    background-color: #fff;
+    color: coral;
+    }
+	
+	   @keyframes main-page{
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 0;
+        }
+
+        60%{
+            opacity: 100;
+        }
+    }

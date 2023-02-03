@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animated balls</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&family=Poppins:wght@100;800&display=swap" rel="stylesheet">
+
+</head>
+<style>
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+html{
+    font-size: 62.5%;
+  
+}
+body{
+	background:forestgreen;
+	width:100%;
+	height:100vh;
+
+}
+.preloader{
+    width: 50px;
+    height: 50px;
+    background:rgb(204, 27, 27);
+    text-align: center;
+    transform-origin: center;
+    animation: rotate 2s ease-in-out 2;
+    opacity: 0;
+	margin: 10px auto;
+    justify-content: center;
+    display: grid;
+    margin-top: 200px;
+    
+    
+}
+.box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: blue;
+    position: relative;
+   
+}
+.box:nth-child(1){
+    left: 100px;
+    animation: slideright 1s ease-in-out 4;
+}
+
+.box:nth-child(2){
+    left: -100px;
+    top: -50px;
+    animation: slideleft 1s ease-in-out 4;
+
+}
+.go{
+	border:1px solid #ffff;
+	background-color:lightblue;
+	color:coral;
+	outline:none;
+	padding:10px 15px;
+	border-radius:20px;
+	margin-left:47%;
+	animation: go ease-out 9s;
+	cursor:pointer;
+
+	
+	}
+	h2 a{
+	 text-decoration:none;
+	 font-size:18px;
+	 cursor:pointer;
+	 
+	}
+	.go:hover{
+	background-color:#ffff;
+	border:1ps solid #ffff;
+	color:chocolate;
+	font-weight:600;
+	
+	}
+
+@keyframes rotate{
+    0%{
+        opacity: .6;
+        transform: rotate(0deg);
+    }
+    
+    25%{
+        background-color: coral;
+        
+        border-radius: 50% 0% 50% 0%;
+    }
+    
+    50%{
+        color: green;
+        transform: rotate(0deg);
+        
+    }
+    
+    100%{
+        background-color: purple;
+        transform: rotate(360deg);
+    }
+}
+@keyframes slideleft{
+    0%{
+        opacity: .8;
+        background-color: green;
+        transform: translateY(100px);
+    }
+    50%{
+        
+        background-color: rgb(172, 172, 255);
+        transform: translate(120px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideright{
+    0%{
+        opacity: .8;
+        transform: translateY(-100px);
+        background-color: green;
+    }
+    50%{
+        background-color: rgb(157, 157, 254);
+        transform: translate(-120px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes go{
+	0%{opacity:0;
+	}
+	50%{
+	opacity:0;
+	}
+	70%{
+	opacity:1;
+	}
+	100%{
+	opacity:1;}
+}
+
+
+
+</style>
+<body>
+    
+ 
+<div class="container preloader">
+
+    <div class="box">
+    </div>
+
+    <div class="box">
+    </div>
+    <div><h1 class="laod">Loading.....</h1>
+    </div>
+    </div>
+    <div class="link-go"><h2><a href="home.html" class="go"> Go to home</a></h2> </div>
+
+
+
+    
+
+</body>
+</html>
