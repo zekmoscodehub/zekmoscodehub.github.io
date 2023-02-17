@@ -27,23 +27,39 @@
 		</ul>
     </nav>
     </div>
+    <div class="conatainer">
 <div class="main-content">
-<h1>Zekmose</h1>
-<form class="contact" name="contact" netlify>
-    <p>
-      <label>Name <input type="text" name="name" /></label>
-    </p>
-    <p>
-      <label>Email <input type="email" name="email" /></label>
-    </p>
-    <p>
-      <button type="submit">Send</button>
-    </p>
-  </form>
+    <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact">
+
+        <p>
+          <label>Your Name: <input type="text" name="name" /></label>
+        </p>
+        <p>
+          <label>Your Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Project title: <select name="role[]" multiple>
+            <option value="leader">Blog page</option>
+            <option value="follower">Landing page</option>
+            <option value="follower">Fully Responsite website</option>
+            <option value="follower">Digital marketing</option>
+          </select></label>
+        </p>
+        <p>
+          <label>Message: <textarea name="message"></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+      
 </div>
-<div class="conatainer">
+
     
 </div>
     
+
+<script>  </script>
 </body>
 </html>
