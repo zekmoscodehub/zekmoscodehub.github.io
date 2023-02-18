@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
    
-    
+
 }
 html{
 font-size: 62.5%;
@@ -58,7 +58,7 @@ nav {
 section{
     width: 200px;
     height: 250px;
-    background-color#fff;
+    background-color:#fff;
 }
 
 .logo{
