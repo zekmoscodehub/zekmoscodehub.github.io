@@ -2,7 +2,7 @@
     padding:0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: sans-serif;
    
 
 }
@@ -98,12 +98,19 @@ border-radius: 30px;
     background-image: radial-gradient(whitesmoke, chocolate);
     padding: 7px 9px;
     margin: auto;
-    font-size: 18px;
+    font-size: 22px;
     color: rgb(251, 228, 228);
     border: 1px solid coral;
     border-radius: 30px;
-    position: relative;
+    position: absolute;
     
+}
+.btn1{
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    
+
 }
 .btn:hover{
     border: 1px solid coral;
@@ -339,7 +346,6 @@ select{
     justify-content: center;
    
 }
-
 .fields {
     width: 368px;
     line-height: 2.5rem;
@@ -349,13 +355,15 @@ select{
     
 }
 .input-group1{
-    margin-top: -10px;
+    margin-top: -12px;
 }
-.input-group1 .btn1{
+.btn1{
     width: 368px;
-    padding: 8px 30px;
-    margin-top: 10px;
+    padding: 5px 30px;
+    margin-top: 3px;
     height: auto;
+    border:1px solid #fff;
+    color:#fff;
     
 }
 
@@ -371,6 +379,8 @@ option:hover{
 }
 textarea{
     color: rgb(9, 114, 114);
+    width: 370px;
+    hight:400px;
 }
 
 /*
