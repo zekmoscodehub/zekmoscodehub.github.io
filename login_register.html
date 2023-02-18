@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+<link rel="stylesheet" href="main-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&family=Poppins:ital,wght@0,100;0,600;1,100;1,200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.css">
+
+</head>
+<body>
+    <div class="body-login">
+    <div class="hero hero-main">
+        <nav class="menu">
+          <div class="logo">
+            <img src="coloredlogo.png" class="logo" alt="Logo" />
+          </div>
+          <div class="menubar">
+          <ul>
+            <a href="home.html">Home</a>
+            <a href="template.html">Templates</a>
+            <a href="download.html">Download</a>
+            <a href="hire.html">Hire Me</a>
+            <a href="contact.html">Contact</a>
+            <label for=""
+              ><a href="login_register.html" class="btn-join">Sign in / Join</a>
+            </label>
+          </ul>
+        </div>
+        </nav>
+      </div>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn1"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                
+            </div>
+            <div class="social-icons">
+			    <img src="images/bg.jpg">
+                <img src="images/bg.jpg">   
+                <img src="images/bg.jpg">   
+               </div> 
+               <form id="login" class="input-group">
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input type="password" class="input-field" placeholder="Enter Pasword" required>
+                    <input type="checkbox" class="check-box"><span>Remember Password</span>
+                    <button type="submit" class="submit-btn">Sign in</button>
+               </form>
+               <form id="register" class="input-group">
+                <input type="email" class="input-field" placeholder="Email" required>
+                <input type="name" class="input-field" placeholder="User name" required>
+                <input type="name" class="input-field" placeholder="Confirm User name" required>
+                <input type="password" class="input-field" placeholder="Create Password" required>
+                <input type="password" class="input-field" placeholder="Confirm Password" required>
+                <input type="checkbox" class="check-box"><span class="agree">I agree to the <a href="#">Terms</a> & <a href="#">Conditions</a></span>
+                <button type="submit" class="submit-btn">Sign Up</button>
+           </form>
+        </div>
+        
+    </div>    
+    <script>
+        var x=document.getElementById("login");
+        var y=document.getElementById("register");
+        var z=document.getElementById("btn1");
+
+        function register(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+        function login(){
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0";
+        }
+    </script>
+    </div>
+</body>
+</html>
