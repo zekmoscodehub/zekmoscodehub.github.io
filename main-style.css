@@ -189,7 +189,7 @@ border-radius: 30px;
     top: 180px;
     position: absolute;
     width: 280px;
-    transition: .5s;
+    transition: .5 ease;
 
 }
 .input-field{
@@ -214,9 +214,11 @@ border-radius: 30px;
     outline: none;
     border-radius: 30px;
 }
+
 .check-box{
-    margin: 30px 10px 30px 0;
+    margin: 30px 10px ;
     }
+
     textarea{
         width: 100px;
         height: 150px;
@@ -233,11 +235,11 @@ border-radius: 30px;
 }
 #login{
     left: 50px;
-    transition: 0.5s;
+    transition: 0.3s ease;
 }
 #register{
     left: 400px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 .my-pic{
     
@@ -269,9 +271,16 @@ select{
     margin-right: 40px;
     position: relative;
 }
+.online{
+    color:#f0d3e0;
+    font-size: 35px;
+}
 .container-1{
-    background-image:url('home_bg.jpg');
+    background-image:url('bg.jpg');
     flex-wrap: wrap;
+    background-attachment:fixed;
+    background-position:center;
+    background-size:cover;
 	float:right;
     color: #fff;
 	text-align:center;

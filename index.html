@@ -22,11 +22,10 @@ html{
   
 }
 body{
-	background:forestgreen;
-	width:100%;
-	height:100vh;
-    text-align: center;
-
+	background:url(bg-ai.webp);
+	background-size:cover;
+    background-attachment: fixed;
+    background-position:center
 }
 .preloader{
     width: 50px;
@@ -62,7 +61,7 @@ body{
     animation: slideleft 1s ease-in-out 4;
 
 }
-a.go{
+h1 a.load, a .go{
     color:#fff;
     font-size: 25px;
     animation: go ease-out 9s;
@@ -91,7 +90,12 @@ a.go{
 	 font-size:18px;
 	 cursor:pointer;
 	 
-	}
+	} 
+    a .go{
+        margin-top: 20px;
+        text-decoration: none;
+
+    }
     .tag, .go-link{
         text-align: center;
         justify-content: center;
@@ -182,17 +186,13 @@ a.go{
 
     <div class="box">
     </div>
-    <div><h1 class="laod">Loading.....</h1>
+    <div><h1 class="laod ">Loading.....</h1>
     </div>
     </div>
 
 <div class="go-link">
-    <div class="tag">
-        <a href="https://zekmoscodehub.ml/home.html"><img src="badge.png" alt="" class="load"></a>
-       
-    </div>
-    <br>
-<a href="https://zekmoscodehub.ml/home.html"><br><h1 class="go"> Go to website</h1></a>
+    
+<a href="home.html"><h1 class="go"> Go to website</h1></a>
 </div>   
 
 </body>
