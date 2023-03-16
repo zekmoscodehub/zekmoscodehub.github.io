@@ -7,7 +7,7 @@
     <title>Message me</title>
 	<link rel="stylesheet" href="main-style.css"> 
 </head>
-<>
+
   <div class="hero hero-main">
     <nav class="menu">
       <div class="logo">
@@ -39,12 +39,15 @@
     <div class="social-icons">
   <i class="fas fa-brand-youtube"></i> 
        </div> 
-       <form id="contact" class="input-group2">
-        <input type="namee" class="input-field" placeholder="Email" required>
-        <input type="email" class="input-field" placeholder="Tel (+233)000 000 000" required>
-        <input type="tell" class="input-field" placeholder="Tel (+233)000 000 000" required>
-        <input type="Country" class="input-field" placeholder="Country of resident" required>
-        <textarea type="Text" class="input-field" placeholder="Enter massage here.."></textarea>
+      <form
+       action="https://formspree.io/f/mrgvldag"
+       method="POST"
+      id="contact" class="input-group2">
+        <input type="name" name="name" class="input-field" placeholder="Email" required>
+        <input type="email" name="email" class="input-field" placeholder="Tel (+233)000 000 000" required>
+        <input type="tel"name="tel" class="input-field" placeholder="Tel (+233)000 000 000" required>
+        <input type="Country"name="country" class="input-field" placeholder="Country of resident" required>
+        <textarea type="Text" name="message" class="input-field" placeholder="Enter massage here.."></textarea>
         <button type="submit" class="submit-btn">Submit</button>
    </form>
 </div>
